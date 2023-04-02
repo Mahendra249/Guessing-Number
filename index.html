@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/x-icon" href="images.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Number</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+
+        <h1>GUESS-NUMBER</h1>
+    </header>
+    <div class="container">
+         <h2>Hey! play a Game I am thinking of a number between 1-100.   </h2>
+         <h2>Can you guess it?...</h2>
+        <div class="box">
+         <input type="text" placeholder="Num" id="guess">
+         <div class="runbtn">
+             <button onclick="play()" id="my-btn">Guess</button>
+    
+              <button type="button" id="btn-red" class="btn btn-green">Clear</button>
+              <button type="button" id="btn-blue" class="btn btn-green" onclick="replay()">Restart</button>
+         </div>
+        </div>
+        <div class="buttonbox">
+            <div class="normal-btn">
+                <button type="button" class="btn btn-grey" data-num="7">7</button>
+                <button type="button" class="btn btn-grey" data-num="8">8</button>
+                <button type="button" class="btn btn-grey" data-num="9">9</button>
+                <button type="button" class="btn btn-grey" data-num="4">4</button>
+                <button type="button" class="btn btn-grey" data-num="5">5</button>
+                <button type="button" class="btn btn-grey" data-num="6">6</button>
+                <button type="button" class="btn btn-grey" data-num="1">1</button>
+                <button type="button" class="btn btn-grey" data-num="2">2</button>
+                <button type="button" class="btn btn-grey" data-num="3">3</button>
+                <button type="button" class="btn btn-grey" id="point" data-num=".">.</button>
+                <button type="button" class="btn btn-grey" id="point" data-num="0">0</button>
+                <button type="button" class="btn btn-grey" id="point" data-num="00">00</button>
+            </div>
+
+        </div>
+        <p id="message1">No. of Guesses:0</p>
+        <p id="message2">Guessed number are: None</p>
+        <p id="message3"></p>
+    </div> 
+    <script src="index.js"></script>
+</body>
+
+</html>
